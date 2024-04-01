@@ -1,13 +1,15 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Convert from "./Convert";
 export default function Home() {
   /* Forcing client sided page - point 7 */
-  const [time, timer] = useState(new Date().toLocaleTimeString());
+  const [time, timer] = useState(0);
 
-  setInterval(() => {
-    timer(new Date().toLocaleTimeString());
-  }, 1000);
+  useEffect(() => {
+    setInterval(() => {
+      timer(new Date().toLocaleTimeString());
+    }, 1000);
+  }, []);
 
   return (
     <main className="flex flex-col gap-4 container p-4 mx-auto">
