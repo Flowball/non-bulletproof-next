@@ -3,10 +3,13 @@ import { useState } from "react";
 import { exchange } from "./data";
 
 export default function Convert(props) {
+  /* Bad naming of variables - point 3 */
   const [amount1, setAmount1] = useState(0);
   const [amount2, setAmount2] = useState(0);
 
   //IV = inputValue
+  /* Attribute is using mental mapping - point 6 */
+  /* Name of function should be same as what it does - point 8 */
   function converter(IV) {
     const exchangeItem = exchange.find((item) =>
       item.hasOwnProperty(props.currency)

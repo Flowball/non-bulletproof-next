@@ -41,7 +41,8 @@ This repository is meant to show what NOT to do when developing an application.
    - Unnessecary naming and structuring of arrays.
 6. Mental mapping
    - Mental mapping, example using shorthand variable names to at the time of developing understanding, but is later confusing
-7. Not naming functions based on what they to.
-8. Duplicate code.
-9. Working in main branch at all times.
-10. Bad commit names.
+7. Client sided "page.tsx"
+8. Not naming functions based on what they to.
+9. Duplicate code.
+10. Working in main branch at all times.
+11. Bad commit names.

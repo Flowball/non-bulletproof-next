@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 import Convert from "./Convert";
-
 export default function Home() {
+  /* Forcing client sided page - point 7 */
   const [time, timer] = useState(new Date().toLocaleTimeString());
 
   setInterval(() => {
@@ -14,7 +14,8 @@ export default function Home() {
       <div>{time}</div>
       <div className="text-5xl mx-auto">Currency Converter</div>
       <div className="grid grid-cols-2 gap-4 p-2">
-        {/* COULD BE MAPPED INSTEAD OF HARDCODED */}
+        {/* Duplicate code - point 9 */}
+        {/* Could be mapped through an array */}
         <Convert currency={"USD"} />
         <Convert currency={"DKK"} />
         <Convert currency={"YEN"} />
